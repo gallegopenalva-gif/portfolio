@@ -5,68 +5,182 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Leading Effective Meetings: From Agenda to Action</title>
+<title>Leading Effective Meetings | Monica Gallego</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
-    background-color:#f5f7fa;
-    color:#333;
-    line-height:1.7;
-}
-
-h1{
-    color:#0f172a;
-    text-align:center;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    text-align:center;
-    color:#666;
-    margin-bottom:40px;
-}
-
-.section{
-    background:white;
-    padding:30px;
-    margin-bottom:25px;
-    border-radius:12px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
-
-h2{
-    color:#0f172a;
-    margin-bottom:15px;
-}
-
-.notice{
-    background:#eef4ff;
-    border-left:5px solid #2563eb;
-    padding:12px;
-    margin-top:15px;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
 }
 
 nav{
-    text-align:center;
-    margin-bottom:40px;
+background:#0f172a;
+padding:20px;
+text-align:center;
 }
 
 nav a{
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-    color:#2563eb;
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#7dd3fc;
+}
+
+.hero{
+background:linear-gradient(135deg,#0f172a,#2563eb,#38bdf8);
+color:white;
+padding:100px 40px;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:350px;
+height:350px;
+background:rgba(255,255,255,0.08);
+border-radius:50%;
+top:-100px;
+right:-100px;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+width:250px;
+height:250px;
+background:rgba(255,255,255,0.08);
+border-radius:50%;
+bottom:-80px;
+left:-50px;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:900px;
+margin:auto;
+}
+
+.hero-tag{
+display:inline-block;
+background:rgba(255,255,255,0.20);
+padding:10px 20px;
+border-radius:30px;
+margin-bottom:25px;
+font-size:14px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+margin:auto;
+}
+
+.hero-stats{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:50px;
+flex-wrap:wrap;
+}
+
+.stat{
+background:rgba(255,255,255,0.15);
+padding:20px 30px;
+border-radius:15px;
+backdrop-filter:blur(5px);
+}
+
+.stat span{
+display:block;
+font-size:28px;
+font-weight:bold;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 30px;
+background:white;
+color:#0f172a;
+font-weight:bold;
+text-decoration:none;
+border-radius:10px;
+}
+
+.button:hover{
+background:#dbeafe;
+}
+
+.container{
+width:85%;
+max-width:1100px;
+margin:auto;
+padding:60px 0;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:15px;
+margin-bottom:30px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h2{
+color:#0f172a;
+margin-bottom:15px;
+}
+
+.notice{
+margin-top:15px;
+background:#eef4ff;
+border-left:5px solid #2563eb;
+padding:15px;
+border-radius:5px;
 }
 
 footer{
-    text-align:center;
-    margin-top:40px;
-    color:#666;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
 }
 
 </style>
@@ -76,17 +190,56 @@ footer{
 <body>
 
 <nav>
+
 <a href="index.html">Home</a>
 <a href="projects.html">Projects</a>
+
 </nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-tag">
+SCENARIO-BASED LEARNING EXPERIENCE
+</div>
 
 <h1>Leading Effective Meetings</h1>
 
-<p class="subtitle">
-From Agenda to Action
+<p>
+Transforming meetings from time-consuming discussions into productive, action-oriented experiences.
 </p>
 
-<div class="section">
+<a href="#overview" class="button">
+Explore the Project
+</a>
+
+<div class="hero-stats">
+
+<div class="stat">
+<span>45–60</span>
+Minutes
+</div>
+
+<div class="stat">
+<span>4</span>
+Learning Sections
+</div>
+
+<div class="stat">
+<span>1</span>
+Scenario-Based Module
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="card" id="overview">
 
 <h2>Course Overview</h2>
 
@@ -95,7 +248,7 @@ This learning experience is designed for professionals who lead meetings in educ
 </p>
 
 <p>
-Participants will learn strategies for planning, facilitating, and concluding effective meetings that produce meaningful outcomes and actionable next steps.
+Participants will learn practical strategies for planning, facilitating, and concluding meetings that result in meaningful decisions and clear action items.
 </p>
 
 <p>
@@ -108,12 +261,12 @@ Content currently under development.
 
 </div>
 
-<div class="section">
+<div class="card">
 
 <h2>Start Learning</h2>
 
 <p>
-This section will contain instructional content, examples, learning activities, and scenario-based exercises focused on effective meeting leadership.
+This section will contain instructional content, examples, scenario-based activities, and decision-making exercises related to effective meeting leadership.
 </p>
 
 <div class="notice">
@@ -122,12 +275,12 @@ Content currently under development.
 
 </div>
 
-<div class="section">
+<div class="card">
 
 <h2>Design Case Study</h2>
 
 <p>
-This section will document the instructional design process, including the performance gap, audience analysis, design decisions, tools, and project reflections.
+This section will document the instructional design process, including audience analysis, performance gaps, design decisions, technology selection, and reflections.
 </p>
 
 <div class="notice">
@@ -136,28 +289,27 @@ Content currently under development.
 
 </div>
 
-<div class="section">
+<div class="card">
 
 <h2>Professional Learning</h2>
 
 <p>
-This section will document professional learning activities related to instructional design, e-learning development, and Rise 360.
+This section will showcase professional development activities, instructional design training, and skills gained throughout the project.
 </p>
 
 <div class="notice">
 Content currently under development.
+</div>
+
 </div>
 
 </div>
 
 <footer>
 
-<p>
-Monica Gallego | Learning Design Portfolio
-</p>
+Monica Gallego • Learning Design Portfolio
 
 </footer>
 
 </body>
-
 </html>
