@@ -1,102 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monica Gallego | Learning Design Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monica Gallego | Learning Design Portfolio</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f8fafc;
-            color: #333;
-            line-height: 1.6;
-        }
+<style>
 
-        header {
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-        }
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f7f9fc;
+color:#333;
+line-height:1.6;
+}
 
-        header p {
-            font-size: 1.2rem;
-            margin-top: 15px;
-        }
+nav{
+background:#0f172a;
+padding:20px;
+text-align:center;
+}
 
-        nav {
-            background: #1e293b;
-            padding: 15px;
-            text-align: center;
-        }
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+.hero{
+height:80vh;
+background:linear-gradient(rgba(15,23,42,.7),rgba(15,23,42,.7)),
+url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:30px;
+}
 
-        nav a:hover {
-            color: #60a5fa;
-        }
+.hero-content h1{
+font-size:4rem;
+margin-bottom:20px;
+}
 
-        .container {
-            width: 80%;
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+.hero-content p{
+font-size:1.3rem;
+max-width:800px;
+margin:auto;
+}
 
-        .section {
-            margin-bottom: 60px;
-        }
+.container{
+width:85%;
+max-width:1200px;
+margin:auto;
+padding:80px 0;
+}
 
-        .project-card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
+.section-title{
+text-align:center;
+margin-bottom:40px;
+color:#0f172a;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #0f172a;
-            color: white;
-        }
-    </style>
-</head>
+.about{
+display:flex;
+gap:40px;
+align-items:center;
+}
 
-<body>
+.about img{
+width:300px;
+border-radius:15px;
+}
 
-<header>
-    <h1>Monica Gallego</h1>
-    <p>Learning Design Portfolio</p>
-    <p>Instructional Design • E-Learning • Educational Technology</p>
-</header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About Me</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Case Studies</a>
-    <a href="#">Professional Learning</a>
-    <a href="#">Contact</a>
-</nav>
-
-<div class="container">
-
-    <section class="section">
-        <h2>Welcome</h2>
-
-        <p>
-            Welcome to my instructional design portfolio. This site showcases
-            learning experiences, e-
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:
