@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +41,7 @@ color:#7dd3fc;
 .hero{
 background:linear-gradient(135deg,#0f172a,#2563eb,#38bdf8);
 color:white;
-padding:100px 40px;
+padding:100px 30px;
 text-align:center;
 position:relative;
 overflow:hidden;
@@ -51,19 +50,19 @@ overflow:hidden;
 .hero::before{
 content:"";
 position:absolute;
-width:350px;
-height:350px;
+width:300px;
+height:300px;
 background:rgba(255,255,255,0.08);
 border-radius:50%;
-top:-100px;
+top:-120px;
 right:-100px;
 }
 
 .hero::after{
 content:"";
 position:absolute;
-width:250px;
-height:250px;
+width:220px;
+height:220px;
 background:rgba(255,255,255,0.08);
 border-radius:50%;
 bottom:-80px;
@@ -77,14 +76,14 @@ max-width:900px;
 margin:auto;
 }
 
-.hero-tag{
+.badge{
 display:inline-block;
-background:rgba(255,255,255,0.20);
 padding:10px 20px;
+background:rgba(255,255,255,0.20);
 border-radius:30px;
-margin-bottom:25px;
 font-size:14px;
 font-weight:bold;
+margin-bottom:25px;
 letter-spacing:1px;
 }
 
@@ -99,40 +98,24 @@ max-width:700px;
 margin:auto;
 }
 
-.hero-stats{
+.stats{
 display:flex;
 justify-content:center;
 gap:30px;
-margin-top:50px;
+margin-top:40px;
 flex-wrap:wrap;
 }
 
 .stat{
 background:rgba(255,255,255,0.15);
-padding:20px 30px;
+padding:18px 28px;
 border-radius:15px;
-backdrop-filter:blur(5px);
 }
 
 .stat span{
 display:block;
 font-size:28px;
 font-weight:bold;
-}
-
-.button{
-display:inline-block;
-margin-top:30px;
-padding:15px 30px;
-background:white;
-color:#0f172a;
-font-weight:bold;
-text-decoration:none;
-border-radius:10px;
-}
-
-.button:hover{
-background:#dbeafe;
 }
 
 .container{
@@ -145,21 +128,21 @@ padding:60px 0;
 .card{
 background:white;
 padding:35px;
-border-radius:15px;
+border-radius:18px;
 margin-bottom:30px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
 .card h2{
-color:#0f172a;
 margin-bottom:15px;
+color:#0f172a;
 }
 
 .notice{
-margin-top:15px;
 background:#eef4ff;
 border-left:5px solid #2563eb;
 padding:15px;
+margin-top:20px;
 border-radius:5px;
 }
 
@@ -168,7 +151,7 @@ background:#0f172a;
 color:white;
 text-align:center;
 padding:30px;
-margin-top:50px;
+margin-top:40px;
 }
 
 @media(max-width:768px){
@@ -184,7 +167,6 @@ font-size:18px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -200,21 +182,17 @@ font-size:18px;
 
 <div class="hero-content">
 
-<div class="hero-tag">
-SCENARIO-BASED LEARNING EXPERIENCE
+<div class="badge">
+INSTRUCTIONAL DESIGN PROJECT
 </div>
 
 <h1>Leading Effective Meetings</h1>
 
 <p>
-Transforming meetings from time-consuming discussions into productive, action-oriented experiences.
+From Agenda to Action
 </p>
 
-<a href="#overview" class="button">
-Explore the Project
-</a>
-
-<div class="hero-stats">
+<div class="stats">
 
 <div class="stat">
 <span>45–60</span>
@@ -223,7 +201,7 @@ Minutes
 
 <div class="stat">
 <span>4</span>
-Learning Sections
+Sections
 </div>
 
 <div class="stat">
@@ -239,7 +217,7 @@ Scenario-Based Module
 
 <div class="container">
 
-<div class="card" id="overview">
+<div class="card">
 
 <h2>Course Overview</h2>
 
@@ -248,7 +226,7 @@ This learning experience is designed for professionals who lead meetings in educ
 </p>
 
 <p>
-Participants will learn practical strategies for planning, facilitating, and concluding meetings that result in meaningful decisions and clear action items.
+Participants will learn practical strategies for planning, facilitating, and concluding productive meetings that result in meaningful decisions and actionable outcomes.
 </p>
 
 <p>
@@ -266,7 +244,7 @@ Content currently under development.
 <h2>Start Learning</h2>
 
 <p>
-This section will contain instructional content, examples, scenario-based activities, and decision-making exercises related to effective meeting leadership.
+This section will contain learning content, real-world examples, decision-making scenarios, and activities related to effective meeting planning and facilitation.
 </p>
 
 <div class="notice">
@@ -280,7 +258,7 @@ Content currently under development.
 <h2>Design Case Study</h2>
 
 <p>
-This section will document the instructional design process, including audience analysis, performance gaps, design decisions, technology selection, and reflections.
+This section will document the instructional design process, including performance needs, audience analysis, design decisions, learning objectives, and technology selection.
 </p>
 
 <div class="notice">
@@ -294,7 +272,7 @@ Content currently under development.
 <h2>Professional Learning</h2>
 
 <p>
-This section will showcase professional development activities, instructional design training, and skills gained throughout the project.
+This section will showcase professional development activities, instructional design training, and skills developed throughout the project.
 </p>
 
 <div class="notice">
@@ -307,7 +285,7 @@ Content currently under development.
 
 <footer>
 
-Monica Gallego • Learning Design Portfolio
+Monica Gallego | Learning Design Portfolio
 
 </footer>
 
