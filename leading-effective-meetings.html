@@ -9,171 +9,316 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f4f7fb;
-color:#333;
-line-height:1.7;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
 }
 
 nav{
-background:#0f172a;
-padding:20px;
-text-align:center;
+    background:#0f172a;
+    padding:20px;
+    text-align:center;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:0 20px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
 }
 
 nav a:hover{
-color:#7dd3fc;
+    color:#7dd3fc;
 }
 
 .hero{
-background:linear-gradient(135deg,#0f172a,#2563eb,#38bdf8);
-color:white;
-padding:100px 30px;
-text-align:center;
-position:relative;
-overflow:hidden;
+    background:linear-gradient(135deg,#0f172a,#2563eb,#38bdf8);
+    color:white;
+    padding:100px 30px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
 }
 
 .hero::before{
-content:"";
-position:absolute;
-width:300px;
-height:300px;
-background:rgba(255,255,255,0.08);
-border-radius:50%;
-top:-120px;
-right:-100px;
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,0.08);
+    border-radius:50%;
+    top:-120px;
+    right:-100px;
 }
 
 .hero::after{
-content:"";
-position:absolute;
-width:220px;
-height:220px;
-background:rgba(255,255,255,0.08);
-border-radius:50%;
-bottom:-80px;
-left:-50px;
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    background:rgba(255,255,255,0.08);
+    border-radius:50%;
+    bottom:-80px;
+    left:-50px;
 }
 
 .hero-content{
-position:relative;
-z-index:2;
-max-width:900px;
-margin:auto;
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    margin:auto;
 }
 
 .badge{
-display:inline-block;
-padding:10px 20px;
-background:rgba(255,255,255,0.20);
-border-radius:30px;
-font-size:14px;
-font-weight:bold;
-margin-bottom:25px;
-letter-spacing:1px;
+    display:inline-block;
+    padding:10px 20px;
+    background:rgba(255,255,255,0.20);
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:25px;
+    letter-spacing:1px;
 }
 
 .hero h1{
-font-size:60px;
-margin-bottom:15px;
+    font-size:60px;
+    margin-bottom:15px;
 }
 
 .hero p{
-font-size:22px;
-max-width:700px;
-margin:auto;
+    font-size:22px;
+    max-width:700px;
+    margin:auto;
 }
 
 .stats{
-display:flex;
-justify-content:center;
-gap:30px;
-margin-top:40px;
-flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+    flex-wrap:wrap;
 }
 
 .stat{
-background:rgba(255,255,255,0.15);
-padding:18px 28px;
-border-radius:15px;
+    background:rgba(255,255,255,0.15);
+    padding:18px 28px;
+    border-radius:15px;
 }
 
 .stat span{
-display:block;
-font-size:28px;
-font-weight:bold;
+    display:block;
+    font-size:28px;
+    font-weight:bold;
 }
 
 .container{
-width:85%;
-max-width:1100px;
-margin:auto;
-padding:60px 0;
+    width:85%;
+    max-width:1100px;
+    margin:auto;
+    padding:60px 0;
 }
 
 .card{
-background:white;
-padding:35px;
-border-radius:18px;
-margin-bottom:30px;
-box-shadow:0 6px 18px rgba(0,0,0,.08);
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    margin-bottom:30px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
 .card h2{
-margin-bottom:15px;
-color:#0f172a;
+    margin-bottom:15px;
+    color:#0f172a;
 }
 
 .notice{
-background:#eef4ff;
-border-left:5px solid #2563eb;
-padding:15px;
-margin-top:20px;
-border-radius:5px;
+    background:#eef4ff;
+    border-left:5px solid #2563eb;
+    padding:15px;
+    margin-top:20px;
+    border-radius:5px;
 }
 
 .start-btn{
-display:inline-block;
-margin-top:20px;
-background:#2563eb;
-color:white;
-padding:12px 24px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+    display:inline-block;
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    padding:12px 24px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
 
 .start-btn:hover{
-background:#1d4ed8;
+    background:#1d4ed8;
 }
 
 footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:38px;
+    font-size:38px;
 }
 
 .hero p{
-font-size
+    font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+INSTRUCTIONAL DESIGN PROJECT
+</div>
+
+<h1>Leading Effective Meetings</h1>
+
+<p>
+Planning a Successful Project Review Meeting
+</p>
+
+<div class="stats">
+
+<div class="stat">
+<span>45</span>
+Minutes
+</div>
+
+<div class="stat">
+<span>4</span>
+Sections
+</div>
+
+<div class="stat">
+<span>1</span>
+Worked Example Module
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Course Overview</h2>
+
+<p>
+This learning experience is designed for first-time team leaders, educators, and professionals who need to plan effective meetings.
+</p>
+
+<p>
+The course focuses on a common workplace situation: planning a project review meeting. Learners will examine what makes a meeting plan effective and learn how to organize a meeting that supports clear communication, collaboration, and follow-up actions.
+</p>
+
+<p>
+By the end of this learning experience, learners will be able to identify the key elements of an effective meeting plan, evaluate the strengths and weaknesses of meeting plans, and improve a weak plan using established planning criteria.
+</p>
+
+<p>
+Learners will study a worked example, analyze effective and ineffective meeting plans, complete guided practice activities, receive feedback, and revise a meeting plan using a checklist of success criteria.
+</p>
+
+<p>
+<strong>Estimated Time:</strong> 45 Minutes
+</p>
+
+<p>
+<strong>Requirements:</strong> A web browser and internet connection. No prior knowledge is required.
+</p>
+
+<p>
+<strong>Completion:</strong> Learners will complete practice activities and revise a meeting plan using the provided planning criteria.
+</p>
+
+<p>
+<strong>AI Use:</strong> Learners may use course notes and provided examples. No live AI account is required to complete the learning experience.
+</p>
+
+<a href="lesson1.html" class="start-btn">
+Start Learning
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>Start Learning</h2>
+
+<p>
+This section contains the instructional materials, worked examples, guided practice activities, and feedback opportunities that will help learners develop effective meeting-planning skills.
+</p>
+
+<div class="notice">
+Lesson content is currently under development.
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Design Case Study</h2>
+
+<p>
+This section documents the instructional design process, including audience analysis, learning objectives, design decisions, feedback integration, accessibility considerations, and technology selection.
+</p>
+
+<div class="notice">
+Content currently under development.
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Professional Learning</h2>
+
+<p>
+This section documents professional development activities, instructional design training, software learning experiences, and evidence of continued growth throughout the project.
+</p>
+
+<div class="notice">
+Content currently under development.
+</div>
+
+</div>
+
+</div>
+
+<footer>
+Monica Gallego | Learning Design Portfolio
+</footer>
+
+</body>
+</html>
