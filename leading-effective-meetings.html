@@ -9,174 +9,176 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7fb;
-    color:#333;
-    line-height:1.7;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
 }
 
 nav{
-    background:#0f172a;
-    padding:20px;
-    text-align:center;
+background:#0f172a;
+padding:20px;
+text-align:center;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 20px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
 }
 
 nav a:hover{
-    color:#7dd3fc;
+color:#7dd3fc;
 }
 
 .hero{
-    background:linear-gradient(135deg,#0f172a,#2563eb,#38bdf8);
-    color:white;
-    padding:100px 30px;
-    text-align:center;
-    position:relative;
-    overflow:hidden;
+background:linear-gradient(135deg,#0f172a,#2563eb,#38bdf8);
+color:white;
+padding:100px 30px;
+text-align:center;
+position:relative;
+overflow:hidden;
 }
 
 .hero::before{
-    content:"";
-    position:absolute;
-    width:300px;
-    height:300px;
-    background:rgba(255,255,255,0.08);
-    border-radius:50%;
-    top:-120px;
-    right:-100px;
+content:"";
+position:absolute;
+width:300px;
+height:300px;
+background:rgba(255,255,255,0.08);
+border-radius:50%;
+top:-100px;
+right:-100px;
 }
 
 .hero::after{
-    content:"";
-    position:absolute;
-    width:220px;
-    height:220px;
-    background:rgba(255,255,255,0.08);
-    border-radius:50%;
-    bottom:-80px;
-    left:-50px;
+content:"";
+position:absolute;
+width:220px;
+height:220px;
+background:rgba(255,255,255,0.08);
+border-radius:50%;
+bottom:-80px;
+left:-50px;
 }
 
 .hero-content{
-    position:relative;
-    z-index:2;
-    max-width:900px;
-    margin:auto;
+position:relative;
+z-index:2;
+max-width:900px;
+margin:auto;
 }
 
 .badge{
-    display:inline-block;
-    padding:10px 20px;
-    background:rgba(255,255,255,0.20);
-    border-radius:30px;
-    font-size:14px;
-    font-weight:bold;
-    margin-bottom:25px;
-    letter-spacing:1px;
+display:inline-block;
+padding:10px 20px;
+background:rgba(255,255,255,.18);
+border-radius:30px;
+font-size:14px;
+font-weight:bold;
+margin-bottom:25px;
 }
 
 .hero h1{
-    font-size:60px;
-    margin-bottom:15px;
+font-size:58px;
+margin-bottom:15px;
 }
 
 .hero p{
-    font-size:22px;
-    max-width:700px;
-    margin:auto;
+font-size:22px;
 }
 
 .stats{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:40px;
-    flex-wrap:wrap;
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
 }
 
 .stat{
-    background:rgba(255,255,255,0.15);
-    padding:18px 28px;
-    border-radius:15px;
+background:rgba(255,255,255,.15);
+padding:18px 28px;
+border-radius:15px;
 }
 
 .stat span{
-    display:block;
-    font-size:28px;
-    font-weight:bold;
+display:block;
+font-size:28px;
+font-weight:bold;
 }
 
 .container{
-    width:85%;
-    max-width:1100px;
-    margin:auto;
-    padding:60px 0;
+width:85%;
+max-width:1100px;
+margin:auto;
+padding:60px 0;
 }
 
 .card{
-    background:white;
-    padding:35px;
-    border-radius:18px;
-    margin-bottom:30px;
-    box-shadow:0 6px 18px rgba(0,0,0,.08);
+background:white;
+padding:35px;
+border-radius:18px;
+margin-bottom:30px;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
 .card h2{
-    margin-bottom:15px;
-    color:#0f172a;
+margin-bottom:15px;
+color:#0f172a;
 }
 
 .notice{
-    background:#eef4ff;
-    border-left:5px solid #2563eb;
-    padding:15px;
-    margin-top:20px;
-    border-radius:5px;
+background:#eef4ff;
+border-left:5px solid #2563eb;
+padding:15px;
+margin-top:20px;
+border-radius:5px;
 }
 
-.start-btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#2563eb;
-    color:white;
-    padding:12px 24px;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
+.button{
+display:inline-block;
+margin-top:20px;
+padding:14px 24px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
 }
 
-.start-btn:hover{
-    background:#1d4ed8;
+.button:hover{
+background:#1d4ed8;
+}
+
+ul{
+padding-left:25px;
+margin-top:15px;
 }
 
 footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:30px;
-    margin-top:40px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-    font-size:38px;
+font-size:38px;
 }
 
 .hero p{
-    font-size:18px;
+font-size:18px;
 }
 
 }
@@ -187,8 +189,10 @@ footer{
 <body>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
+
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+
 </nav>
 
 <section class="hero">
@@ -202,24 +206,24 @@ INSTRUCTIONAL DESIGN PROJECT
 <h1>Leading Effective Meetings</h1>
 
 <p>
-Planning a Successful Project Review Meeting
+From Agenda to Action
 </p>
 
 <div class="stats">
 
 <div class="stat">
-<span>45</span>
+<span>45–60</span>
 Minutes
 </div>
 
 <div class="stat">
 <span>4</span>
-Sections
+Core Sections
 </div>
 
 <div class="stat">
 <span>1</span>
-Worked Example Module
+Rise Lesson
 </div>
 
 </div>
@@ -235,40 +239,20 @@ Worked Example Module
 <h2>Course Overview</h2>
 
 <p>
-This learning experience is designed for first-time team leaders, educators, and professionals who need to plan effective meetings.
+This learning experience is designed for professionals who lead meetings in educational, nonprofit, government, and workplace settings.
 </p>
 
 <p>
-The course focuses on a common workplace situation: planning a project review meeting. Learners will examine what makes a meeting plan effective and learn how to organize a meeting that supports clear communication, collaboration, and follow-up actions.
+Participants will learn practical strategies for planning, facilitating, and concluding productive meetings that result in meaningful decisions and actionable outcomes.
 </p>
 
 <p>
-By the end of this learning experience, learners will be able to identify the key elements of an effective meeting plan, evaluate the strengths and weaknesses of meeting plans, and improve a weak plan using established planning criteria.
+Estimated duration: 45–60 minutes.
 </p>
 
-<p>
-Learners will study a worked example, analyze effective and ineffective meeting plans, complete guided practice activities, receive feedback, and revise a meeting plan using a checklist of success criteria.
-</p>
-
-<p>
-<strong>Estimated Time:</strong> 45 Minutes
-</p>
-
-<p>
-<strong>Requirements:</strong> A web browser and internet connection. No prior knowledge is required.
-</p>
-
-<p>
-<strong>Completion:</strong> Learners will complete practice activities and revise a meeting plan using the provided planning criteria.
-</p>
-
-<p>
-<strong>AI Use:</strong> Learners may use course notes and provided examples. No live AI account is required to complete the learning experience.
-</p>
-
-<a href="lesson1.html" class="start-btn">
-Start Learning
-</a>
+<div class="notice">
+Development Status: Lesson 1 has been created in Rise 360 and includes instructional content, guided practice, and feedback. Additional multimedia and accessibility supports are currently being developed.
+</div>
 
 </div>
 
@@ -277,11 +261,32 @@ Start Learning
 <h2>Start Learning</h2>
 
 <p>
-This section contains the instructional materials, worked examples, guided practice activities, and feedback opportunities that will help learners develop effective meeting-planning skills.
+<strong>Lesson 1: Writing Effective Meeting Objectives</strong>
 </p>
 
+<p>
+This lesson introduces one of the most important meeting-planning skills: writing clear and actionable meeting objectives.
+</p>
+
+<p>
+Learners will:
+</p>
+
+<ul>
+<li>Identify characteristics of effective meeting objectives.</li>
+<li>Compare weak and strong objective statements.</li>
+<li>Practice revising a meeting objective.</li>
+<li>Review feedback and model responses.</li>
+</ul>
+
+<a class="button"
+href="https://share.articulate.com/Pdx7QB7BsXhVfusqBDvSb"
+target="_blank">
+Open Lesson 1 in Rise 360
+</a>
+
 <div class="notice">
-Lesson content is currently under development.
+Current content includes instruction, guided practice, feedback, and transcript placeholders. Video, captions, and accessibility supports will be added during development.
 </div>
 
 </div>
@@ -291,7 +296,7 @@ Lesson content is currently under development.
 <h2>Design Case Study</h2>
 
 <p>
-This section documents the instructional design process, including audience analysis, learning objectives, design decisions, feedback integration, accessibility considerations, and technology selection.
+This section will document the instructional design process, including learner analysis, performance needs, design decisions, technologies used, and project reflections.
 </p>
 
 <div class="notice">
@@ -305,7 +310,7 @@ Content currently under development.
 <h2>Professional Learning</h2>
 
 <p>
-This section documents professional development activities, instructional design training, software learning experiences, and evidence of continued growth throughout the project.
+This section will document professional development activities related to instructional design, e-learning development, Rise 360, and multimedia production.
 </p>
 
 <div class="notice">
@@ -317,7 +322,9 @@ Content currently under development.
 </div>
 
 <footer>
+
 Monica Gallego | Learning Design Portfolio
+
 </footer>
 
 </body>
